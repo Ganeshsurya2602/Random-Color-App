@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<title> 3 Sec Color Change App</title>
+	</head>
+	<body>
+	<h1>Change Color</h1>
+	<script>
+		function cm(){
+			let colors=['red','orange','blue','black','white','green'];
+			let r= parseInt(Math.random() * colors.length);
+			document.body.style.backgroundColor= colors[r];
+		}
+		cm();
+		setInterval(cm,3000);
+	</script>
+	</body>
+</html>
